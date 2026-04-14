@@ -1,0 +1,99 @@
+<html>
+<head>
+<title>CSS ANIMATION</title>
+<style type="text/css">
+*{
+    margin:2%;
+    padding:0;
+    font-family: "Century Gothic";
+    text-align: center;
+}
+body{
+    background-color: rgb(179, 104, 104);
+}
+h1{
+    color:rgb(189, 189, 189);
+    font-size: 60px;
+    animation-name: texto;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes texto{
+    from{
+        color:rgba(255,0,0,0);      
+    }
+    to{
+        color:rgba(255,0,0,1); 
+    }
+}
+
+p{
+    color:rgba(0, 0, 0, 0);
+    animation-name: parrafo;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay:3s;
+    animation-fill-mode:forwards;
+}
+@keyframes parrafo{
+    from{
+        margin-left: 100%;
+        width: 400%;
+        color: rgba(0, 0, 0, 0);
+    }
+    to{
+        margin-left: 0%;
+        width: 100%;
+        color: rgba(255, 255, 255, 1);
+    }
+}
+img{
+    opacity: 0;
+    border-radius: 4%;
+    animation-name: foto;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay:6s;
+    width: 300px;
+}
+@keyframes foto {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+</style>
+</head>
+<body>
+<h1>DR.LISA SU</h1>
+<p>Su Lisa (en chino simplificado, 苏姿丰) es una ingeniera eléctrica y 
+ejecutiva comercial estadounidense, nacida en Taiwán. Es la actual directora
+ ejecutiva y presidenta de Advanced Micro Devices (AMD). Al principio de su 
+ carrera, trabajó en Texas Instruments, IBM y Freescale Semiconductor en puestos
+  de ingeniería y administración. Es conocida por su trabajo en el desarrollo de 
+  tecnologías de fabricación de semiconductores de silicio sobre aislante y chips
+   semiconductores más eficientes, durante su tiempo como vicepresidenta del Centro 
+   de Investigación y Desarrollo de Semiconductores de IBM.
+
+Su fue nombrada presidenta y directora ejecutiva de AMD en octubre de 2014,[1] 
+después de unirse a la empresa en 2012 y desempeñar funciones como vicepresidenta 
+senior de las unidades comerciales globales de AMD y directora de operaciones. 
+Actualmente es miembro de las juntas directivas de Analog Devices, Global Semiconductor 
+Alliance y la U.S. Semiconductor Industry Association[2] y es miembro del Instituto de
+ Ingenieros Eléctricos y Electrónicos (IEEE).
+
+Reconocida con varios premios, fue nombrada Ejecutiva del Año por EE Times en 2014
+ y fue considerada como una de las más grandes líderes del mundo en 2017 por la revista
+  Fortune, al tiempo que Bloomberg la incluyó en su lista de las cincuenta personas que
+   definieron ese año. En el año 2020 la Dra. Su fue nombrada miembro de la Academia
+    Estadounidense de Artes y Ciencias. Actualmente (2020) Lisa Su es integrante de la 
+    junta directiva de Cisco, de la Asociación estadounidense de la Industria de los
+     Semiconductores y presidenta de la junta directiva de la Global Semiconductor Alliance</p>
+<img src="img/DR LISA.jpg">
+</body>
+</html>
